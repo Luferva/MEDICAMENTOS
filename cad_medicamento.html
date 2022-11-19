@@ -2,21 +2,19 @@
 <html lang="pt-br">
 
 <head>
-    <title>Login - Seja Bem Vindo</title>
+    <title>Cadastro de Medicamentos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="imagens/icons8-pílula-48.png" type="image/x-icon">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 
 <body class="text-center">
-
     <nav class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 mb-3 bg-white border-bottom shadow-sm">
         <ul class="nav nav-tabs" id="navId">
             <li class="nav-item ">
@@ -31,62 +29,54 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button"
+                <a class="nav-link dropdown-toggle active " data-toggle="dropdown" href="#" role="button"
                     aria-haspopup="true" aria-expanded="false">Cadastrar/Relátorio</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="login.html">Usuário</a>
-                    <a class="dropdown-item" href="rel_medicamento.html">Medicamentos</a>
+                    <a class="dropdown-item active" href="rel_medicamento.html">Medicamentos</a>
                     <a class="dropdown-item" href="#tab6Id">Interações</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="btn btn-outline-primary active" href="login.html">LOGIN</a>
+                <a class="btn btn-outline-primary " href="login.html">LOGIN</a>
             </li>
         </ul>
     </nav>
 
-    <main class="form-signin w-100 m-auto">
-        <form>
-            <br>
-            <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Bem Vindo!</h1>
-
-            <div class="form-floating">
-                <label for="floatingInput"><strong>Email:</strong></label>
-                <input type="email" class="form-control" id="login" placeholder="nome@gmail.com">
+    <main>
+        <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
+        <h1>Cadastro de Medicamentos</h1><br>
+        <form class="form-floating mb-3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label"><strong>Nome Medicamento:</strong> </label>
+                <input type="text" class="form-control" id="nome" placeholder="Ex: Antimicrobiano">
             </div>
-            <br>
-            <div class="form-floating">
-                <label for="floatingPassword"><strong>Senha:</strong></label>
-                <input type="password" class="form-control" id="senha" placeholder="Senha">
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label"><strong>Tipo:</strong> </label>
+                <input type="text" class="form-control" id="" placeholder="Ex: Anticoncepcional">
             </div>
-            <br>
-            <button class="w-100 btn btn-lg btn-primary" type="submit" name="botao" id="Entrar">Entrar</button>
-            <p class="mt-5 mb-3 text-muted">© 2022</p>
+            <div class="col-6">
+                <label for="inputAddress" class="form-label"><strong>Tarja:</strong> </label>
+                <input type="text" class="form-control" id="" placeholder="Ex: Preta">
+            </div>
+            <div class="col-6">
+                <label for="inputAddress2" class="form-label"><strong>Via Administrativa:</strong> </label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Via Oral">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label"><strong>Interação Alimentar:</strong> </label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Ex:">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label"><strong>Como Tomar?:</strong> </label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Ex: ">
+            </div><br>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Salvar</button>
+                <button type="submit" class="btn btn-danger">Excluir</button>
+            </div>
         </form>
-        <a href="index.html">Entrar</a>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

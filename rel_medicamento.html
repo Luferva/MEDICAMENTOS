@@ -2,14 +2,13 @@
 <html lang="pt-br">
 
 <head>
-    <title>Login - Seja Bem Vindo</title>
+    <title>Relatório de Medicamentos</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="imagens/icons8-pílula-48.png" type="image/x-icon">
 
     <!-- CSS -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo/style.css">
@@ -31,62 +30,41 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button"
+                <a class="nav-link dropdown-toggle active " data-toggle="dropdown" href="#" role="button"
                     aria-haspopup="true" aria-expanded="false">Cadastrar/Relátorio</a>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="login.html">Usuário</a>
-                    <a class="dropdown-item" href="rel_medicamento.html">Medicamentos</a>
+                    <a class="dropdown-item active" href="rel_medicamento.html">Medicamentos</a>
                     <a class="dropdown-item" href="#tab6Id">Interações</a>
                 </div>
             </li>
             <li class="nav-item">
-                <a class="btn btn-outline-primary active" href="login.html">LOGIN</a>
+                <a class="btn btn-outline-primary " href="login.html">LOGIN</a>
             </li>
         </ul>
     </nav>
 
-    <main class="form-signin w-100 m-auto">
-        <form>
-            <br>
-            <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Bem Vindo!</h1>
-
-            <div class="form-floating">
-                <label for="floatingInput"><strong>Email:</strong></label>
-                <input type="email" class="form-control" id="login" placeholder="nome@gmail.com">
-            </div>
-            <br>
-            <div class="form-floating">
-                <label for="floatingPassword"><strong>Senha:</strong></label>
-                <input type="password" class="form-control" id="senha" placeholder="Senha">
-            </div>
-            <br>
-            <button class="w-100 btn btn-lg btn-primary" type="submit" name="botao" id="Entrar">Entrar</button>
-            <p class="mt-5 mb-3 text-muted">© 2022</p>
+    <main >
+        <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
+        <h1>Relatório de Medicamentos</h1><br>
+       
+        <form action="" method="post">
+            <div class="row g-3">
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" placeholder="Medicamento" name="medicamento">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" class="form-control" placeholder="Tarja" name="tarja" >
+                </div>
+                <div class="col-sm">
+                    <button type="submit" class="btn btn-primary" name="botao" value="Gerar">Buscar</button>
+                </div>
+                <div class="col-sm">
+                    <a class="btn btn-outline-success" href="cad_medicamento.html">Novo +</a>
+                </div>
+              </div>
         </form>
-        <a href="index.html">Entrar</a>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
