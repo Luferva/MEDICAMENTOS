@@ -44,39 +44,80 @@
     </nav>
 
     <main>
+        <br>
         <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
         <h1>Cadastro de Medicamentos</h1><br>
-        <form class="form-floating mb-3">
-            <div class="col-md-6">
-                <label for="inputEmail4" class="form-label"><strong>Nome Medicamento:</strong> </label>
-                <input type="text" class="form-control" id="nome" placeholder="Ex: Antimicrobiano">
+        <form class="container text-center">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><strong>Medicamento</strong></span>
+                <input type="text" class="form-control" placeholder="Ex: Antimicrobiano">
             </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label"><strong>Tipo:</strong> </label>
-                <input type="text" class="form-control" id="" placeholder="Ex: Anticoncepcional">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><strong>Tipo</strong></span>
+                <input type="text" class="form-control" placeholder="Ex: Anticoncepcional">
             </div>
-            <div class="col-6">
-                <label for="inputAddress" class="form-label"><strong>Tarja:</strong> </label>
-                <input type="text" class="form-control" id="" placeholder="Ex: Preta">
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><strong>Tarja</strong></label>
+                <select class="form-control" id="inputGroupSelect01">
+                    <option selected>Escolha...</option>
+                    <option value="1">Sem Tarja</option>
+                    <option value="2">Amarela</option>
+                    <option value="3">Vermelha</option>
+                    <option value="3">Preta</option>
+                </select>
             </div>
-            <div class="col-6">
-                <label for="inputAddress2" class="form-label"><strong>Via Administrativa:</strong> </label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Via Oral">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><strong>Via Administrativa:</strong></span>
+                <input type="text" class="form-control" placeholder="Ex: Via Oral">
             </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label"><strong>Interação Alimentar:</strong> </label>
-                <input type="text" class="form-control" id="inputCity" placeholder="Ex:">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><strong>Interação Alimentar:</strong></span>
+                <input type="text" class="form-control" placeholder="Ex: ">
             </div>
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label"><strong>Como Tomar?:</strong> </label>
-                <input type="text" class="form-control" id="inputCity" placeholder="Ex: ">
-            </div><br>
-            <div class="col-12">
-                <button type="submit" class="btn btn-success">Salvar</button>
-                <button type="submit" class="btn btn-danger">Excluir</button>
+            <div class="input-group">
+                <span class="input-group-text"><strong>Como Tomar?</strong></span>
+                <textarea class="form-control"></textarea>
             </div>
         </form>
+        <br>
+        <form action="" class="container text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-success">Salvar</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </div>
+            </div>
+        </form>
+
     </main>
+
+    <!--<div class="col-md-4">
+                    <label for="nome" class="input-group-text"><strong>Medicamento:</strong></label>
+                    <input type="text" class="form-control" id="nome" placeholder="Ex: Antimicrobiano">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputPassword4" class="form-label"><strong>Tipo:</strong> </label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Ex: Anticoncepcional">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAddress" class="form-label"><strong>Tarja:</strong> </label>
+                    <input type="text" class="form-control" id="" placeholder="Ex: Preta">
+                </div>
+                
+                <div class="col-md-2">
+                    <label for="inputAddress2" class="form-label"><strong>Via Administrativa:</strong> </label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Via Oral">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label"><strong>Interação Alimentar:</strong> </label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ex:">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputCity" class="form-label"><strong>Como Tomar?:</strong> </label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ex: ">
+                </div>-->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
