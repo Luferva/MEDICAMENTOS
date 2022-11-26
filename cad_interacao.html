@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Relatório de Interações</title>
+    <title>Cadastro de Interações</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 
-<body>
-
+<body class="text-center">
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">LabHub</a>
@@ -26,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -34,17 +33,17 @@
                             Consultar
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Interações</a></li>
-                            <li><a class="dropdown-item" href="cons_medicamento.html">Posologia</a></li>
+                            <li><a class="dropdown-item" href="cons_medicamento.html">Interações</a></li>
+                            <li><a class="dropdown-item" href="#">Posologia</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown ">
+                    <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Relátorio/Cadastrar
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="rel_usuario.html">Usuário</a></li>
+                            <li><a class="dropdown-item" href="cad_usuario.html">Usuário</a></li>
                             <li><a class="dropdown-item " href="rel_medicamento.html">Medicamentos</a></li>
                             <li><a class="dropdown-item active" href="rel_interacoes.html">Interações</a></li>
                         </ul>
@@ -57,29 +56,51 @@
         </div>
     </nav>
     <br>
-
-    <main >
+    <main>
+        <br>
         <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
-        <h1>Relatório de Interações</h1><br>
-       
-        <form action="" method="post" class="container text-center">
-            <div class="row g-3">
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder="Medicamento" name="medicamento">
+        <h1>Cadastro de Interações</h1><br>
+        <form class="container text-center">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><strong>Classe do medicamento:</strong></span>
+                <input type="text" class="form-control" placeholder="Ex: Antitireodianos">
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><strong>Medicamento:</strong></label>
+                <select class="form-control" id="inputGroupSelect01">
+                    <option selected>Escolha...</option>
+                    <option value="1">Levotiroxina</option>
+                    <option value="2">Metimazol</option>
+                    <option value="3">Propitiouracila</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01"><strong>Interação medicamentosa:</strong></label>
+                <select class="form-control" id="inputGroupSelect01">
+                    <option selected>Escolha...</option>
+                    <option value="1">Antidiabéticos</option>
+                    <option value="2">Insulina</option>
+                    <option value="3">Medicamentos indutores enzi </option>
+                    <option value="4">Inibidores da protease</option>
+                    <option value="5">Amiodarona</option>
+                    <option value="6">Salicilatos</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <span class="input-group-text"><strong>Tipo de interação:</strong></span>
+                <textarea class="form-control"></textarea>
+            </div>
+        </form>
+        <br>
+        <form action="" class="container text-center">
+            <div class="row">
+                <div class="col-6">
+                    <button type="submit" class="btn btn-success">Salvar</button>
                 </div>
-                <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder="Interação" name="interacao" >
+                <div class="col-6">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
                 </div>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" placeholder="Classe" name="classe" >
-                  </div>
-                <div class="col-sm">
-                    <button type="submit" class="btn btn-primary" name="botao" value="Gerar">Buscar</button>
-                </div>
-                <div class="col-sm">
-                    <a class="btn btn-outline-success" href="cad_interacao.html">Novo +</a>
-                </div>
-              </div>
+            </div>
         </form>
     </main>
 
