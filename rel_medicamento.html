@@ -15,33 +15,48 @@
 
 <body class="text-center">
 
-    <nav class="d-flex flex-column flex-md-row align-items-center p-3 px-md-3 mb-3 bg-white border-bottom shadow-sm">
-        <ul class="nav nav-tabs" id="navId">
-            <li class="nav-item ">
-                <a href="index.html" class="nav-link ">HOME</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Consultar</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#tab2Id">Interações</a>
-                    <a class="dropdown-item" href="#tab3Id">Posologia</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active " data-toggle="dropdown" href="#" role="button"
-                    aria-haspopup="true" aria-expanded="false">Cadastrar/Relátorio</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="login.html">Usuário</a>
-                    <a class="dropdown-item active" href="rel_medicamento.html">Medicamentos</a>
-                    <a class="dropdown-item" href="#tab6Id">Interações</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="btn btn-outline-primary " href="login.html">LOGIN</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">LabHub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Consultar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Interações</a></li>
+                            <li><a class="dropdown-item" href="#">Posologia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Relátorio/Cadastrar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cad_usuario.html">Usuário</a></li>
+                            <li><a class="dropdown-item active" href="rel_medicamento.html">Medicamentos</a></li>
+                            <li><a class="dropdown-item" href="#">Interações</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary" href="login.html">LOGIN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <br>
 
     <main >
         <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
