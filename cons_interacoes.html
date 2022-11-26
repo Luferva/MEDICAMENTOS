@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Relatório de Medicamentos</title>
+    <title>Consulta de Interações</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,24 +29,24 @@
                         <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Consultar
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cons_interacoes.html">Interações</a></li>
+                            <li><a class="dropdown-item active" href="cons_interacoes.html">Interações</a></li>
                             <li><a class="dropdown-item" href="cons_medicamento.html">Posologia</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Relátorio/Cadastrar
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="rel_usuario.html">Usuário</a></li>
-                            <li><a class="dropdown-item active" href="rel_medicamento.html">Medicamentos</a></li>
-                            <li><a class="dropdown-item" href="rel_interacoes.html">Interações</a></li>
+                            <li><a class="dropdown-item " href="rel_medicamento.html">Medicamentos</a></li>
+                            <li><a class="dropdown-item " href="rel_interacoes.html">Interações</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -60,21 +60,21 @@
 
     <main >
         <img class="mb-4" src="imagens/logo.png" alt="" width="72" height="57"><br>
-        <h1>Relatório de Medicamentos</h1><br>
+        <h1>Consulta de Interações</h1><br>
        
         <form action="" method="post" class="container text-center">
             <div class="row g-3">
-                <div class="col-sm-5">
+                <div class="col-sm-3">
                   <input type="text" class="form-control" placeholder="Medicamento" name="medicamento">
                 </div>
                 <div class="col-sm-3">
-                  <input type="text" class="form-control" placeholder="Tarja" name="tarja" >
+                  <input type="text" class="form-control" placeholder="Interação" name="interacao" >
                 </div>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" placeholder="Classe" name="classe" >
+                  </div>
                 <div class="col-sm">
                     <button type="submit" class="btn btn-primary" name="botao" value="Gerar">Buscar</button>
-                </div>
-                <div class="col-sm">
-                    <a class="btn btn-outline-success" href="cad_medicamento.html">Novo +</a>
                 </div>
               </div>
         </form>
